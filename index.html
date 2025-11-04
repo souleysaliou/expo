@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenRoad Express - Transport Vert Futuriste</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-white font-sans">
+    <!-- Navigation Component -->
+    <script src="components/navigation.js"></script>
+    <custom-navigation></custom-navigation>
+
+    <!-- Hero Section -->
+    <section class="hero relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center"
+        style="background-image: url('voiturevert.jpg');">
+        <!-- Superposition de dégradé -->
+        <div class="absolute inset-0 bg-gradient-to-b from-green-900/50 to-green-50/30 z-0"></div>
+
+        <!-- Contenu -->
+        <div class="container mx-auto px-6 z-10 text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                <span class="typing-animation">Transport Routier Vert</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
+                La route vers un avenir durable et écologique
+            </p>
+            <div class="mt-12 animate-bounce">
+                <i data-feather="chevron-down" class="text-white w-12 h-12"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center" data-aos="fade-right">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="imageintroduction.jpeg" alt="Camion électrique moderne"
+                        class="rounded-lg shadow-xl w-full h-auto object-cover" style="max-height: 400px;">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-green-800 mb-6">Introduction</h2>
+                    <p class="text-gray-700 mb-4">
+                        Le secteur du transport routier représente <span class="font-bold text-green-600">20% des
+                            émissions de GES</span> mondiales. Face à l'urgence climatique, le transport vert devient
+                        une nécessité.
+                    </p>
+                    <p class="text-gray-700">
+                        Notre objectif : réduire l'empreinte carbone du transport routier grâce à des solutions
+                        innovantes et durables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Challenges Section -->
+    <section id="challenges" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-16" data-aos="fade-up">Enjeux et Défis</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all" data-aos="zoom-in">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="cloud" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pollution et GES</h3>
+                    <p class="text-gray-600">
+                        Les camions diesel émettent 2.7kg de CO₂ par litre de carburant consommé, contribuant au
+                        réchauffement climatique.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="droplet" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dépendance au pétrole</h3>
+                    <p class="text-gray-600">
+                        95% de l'énergie utilisée dans le transport routier provient encore du pétrole, une ressource
+                        non renouvelable.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div class="text-green-600 mb-4">
+                        <i data-feather="file-text" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Réglementations</h3>
+                    <p class="text-gray-600">
+                        Les nouvelles normes environnementales imposent des réductions drastiques des émissions d'ici
+                        2030-2050.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-16" data-aos="fade-up">Solutions Vertes</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="solution-card" data-aos="fade-up">
+                    <div class="icon-box bg-green-900 text-green-600">
+                        <i data-feather="battery"></i>
+                    </div>
+                    <h3>Électrification</h3>
+                    <p>Camions 100% électriques avec batteries haute capacité</p>
+                </div>
+
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box bg-blue-900 text-blue-600">
+                        <i data-feather="wind"></i>
+                    </div>
+                    <h3>Hydrogène</h3>
+                    <p>Piles à combustible pour poids lourds longue distance</p>
+                </div>
+
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="icon-box bg-yellow-900 text-yellow-600">
+                        <i data-feather="leaf"></i>
+                    </div>
+                    <h3>Biocarburants</h3>
+                    <p>Carburants issus de matières organiques renouvelables</p>
+                </div>
+
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="icon-box bg-purple-900 text-purple-600">
+                        <i data-feather="activity"></i>
+                    </div>
+                    <h3>Optimisation</h3>
+                    <p>Réduction de consommation par meilleures pratiques</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tesla & Volvo Section -->
+    <section id="innovators" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-16" data-aos="fade-up">Pionniers du Transport
+                Vert</h2>
+
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <div class="video-container rounded-lg shadow-xl overflow-hidden">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/QoN7HWD3q3E"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-6 text-gray-800">Tesla Semi</h3>
+                    <p class="text-gray-600 mt-3">
+                        Le camion électrique de Tesla offre 800 km d'autonomie avec une charge rapide en 30 minutes. Une
+                        révolution pour le transport longue distance.
+                    </p>
+                </div>
+                <div class="video-container rounded-lg shadow-xl overflow-hidden">
+                    <div class="md:w-1/2" data-aos="fade-right"></div>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/p5EwPXErzBQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <h3 class="text-2xl font-bold mt-6 text-gray-800">Volvo VNR Electric</h3>
+                <p class="text-gray-600 mt-3">
+                    Volvo propose des solutions électriques complètes pour le transport régional avec des batteries
+                    modulaires adaptables.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Canada Section -->
+    <section id="canada" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-16" data-aos="fade-up">Initiatives Canadiennes
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-8 rounded-lg" data-aos="zoom-in">
+                    <h3 class="text-xl font-bold text-green-800 mb-3">Lion Electric</h3>
+                    <p class="text-gray-700">
+                        Entreprise québécoise leader dans les véhicules moyens et lourds 100% électriques.
+                    </p>
+                </div>
+
+                <div class="bg-green-50 p-8 rounded-lg" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-green-800 mb-3">Programmes Fédéraux</h3>
+                    <p class="text-gray-700">
+                        Subventions pour l'achat de camions verts et développement d'infrastructures de recharge.
+                    </p>
+                </div>
+
+                <div class="bg-green-50 p-8 rounded-lg" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-green-800 mb-3">Volvo Canada</h3>
+                    <p class="text-gray-700">
+                        Tests de camions à hydrogène et électriques dans les conditions climatiques canadiennes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="py-16 bg-green-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">Conclusion</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+                Le transport routier vert représente l'avenir : une route plus propre, plus intelligente et plus durable
+                pour notre planète.
+            </p>
+            <div class="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white text-green-800 px-8 py-4 rounded-full font-bold inline-block">
+                    Rejoignez la révolution verte
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <script src="components/footer.js"></script>
+    <custom-footer></custom-footer>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top"
+        class="fixed bottom-8 right-8 bg-green-600 text-white p-3 rounded-full shadow-lg cursor-pointer opacity-0 invisible transition-all">
+        <i data-feather="arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+
+</html>
